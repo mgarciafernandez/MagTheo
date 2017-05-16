@@ -1,0 +1,20 @@
+CC=gcc
+LDFLAGS=-L/scratch/mgarcia/include/cosmomad/lib -lcosmomad
+CFLAGS=-I/scratch/mgarcia/include/cosmomad/include -O3
+SOURCES=theo_mm.c
+EXECUTABLE=theo_mm.exe
+
+all:  exec success
+
+exec:
+	$(CC) -o $(EXECUTABLE) $(SOURCES) $(LDFLAGS) $(CFLAGS) 
+
+clean:
+	rm -rf *.src *.o *.exe
+success:
+	@echo "#################################"
+	@echo "## COMPILATION SUCCEEDED!      ##"
+	@echo "#################################"
+
+
+
