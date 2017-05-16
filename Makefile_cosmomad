@@ -1,8 +1,8 @@
 CC=gcc
 LDFLAGS=-L/scratch/mgarcia/include/cosmomad/lib -lcosmomad
 CFLAGS=-I/scratch/mgarcia/include/cosmomad/include -O3
-SOURCES=theo_mm.c
-EXECUTABLE=theo_mm.exe
+SOURCES=theo_kernel.c
+EXECUTABLE=theo_kernel.exe
 
 all:  exec success
 
